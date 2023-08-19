@@ -6,4 +6,4 @@ def phonebook():
 def show_phonebook():
     with open('phonebook.txt', 'r', encoding='utf-8') as data:
         for line in data:
-            print(line)
+            print(line, end="")
