@@ -11,7 +11,7 @@ from phonebook import show_phonebook
 from add_person import add_person
 from find_person import find_person
 from remove_cont import remove_cont
-from change_human import change_contack
+# from change_human import change_contack
 
 phonebook()
 while True:
@@ -28,16 +28,18 @@ while True:
         show_phonebook()
     elif click == 2:
         add_person()
-    elif click == 3:
-        show_phonebook()
-        change = input("Кого вы хотите изменить:")
-        change_contack(change)
+    # elif click == 3:
+        # show_phonebook()
+        # change = input("Кого вы хотите изменить:")
+        # change_contack(change)
     elif click == 4:
         find = input('Напишите что кого вы ищете: ')
         find_person(find.title())
     # elif click == 5:
 
     elif click == 6:
-        remove_cont(input('Подскажите кого нужно удалить: '))
+        show_phonebook()
+        remove_cont(input('выберите кого удалить: '))
+
     elif click == 7:
         break
